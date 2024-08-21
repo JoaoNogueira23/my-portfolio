@@ -6,11 +6,10 @@ export default function NaveBar() {
     return(
         <nav className="nav-bar">
             <Button 
-            buttonName="About"
+            buttonName="Home"
             />
-
             <Button 
-            buttonName="Skills"
+            buttonName="About"
             />
             <Button 
             buttonName="Projects"

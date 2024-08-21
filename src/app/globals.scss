@@ -1,3 +1,29 @@
+/* CSS RESET */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/* CSS APPLICATION */
 :root{
     --bg-primary: #202833;
     --text-primary: #FFFFFF;
@@ -5,6 +31,28 @@
     --text-global: #82888F;
 }
 
+
 body{
     background-color: var(--bg-primary);
+    background: 
+    radial-gradient(circle, rgba(48,62,82,1) 28%, rgba(32,40,51,1) 60%)
+    ;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 0 150px 0 150px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.title-site{
+    color: var(--text-primary);
+}
+
+.icon-tag{
+    color: var(--text-secondary);
 }

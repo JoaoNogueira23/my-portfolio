@@ -15,12 +15,22 @@ export default function Button({buttonName} : ButtonProps) {
     const [activePath, setActivePath] = useState<boolean>(false)
 
     useEffect(() => {
-        pathname.replace('/', '') == buttonName.toLocaleLowerCase() ? setActivePath(true) : setActivePath(false)
+        console.log(pathname)
+        if(buttonName.toLowerCase() == 'home'){
+            setActivePath((prev) => !prev)
+        }else{
+            pathname.replace('/', '') == buttonName.toLowerCase() ? setActivePath(true) : setActivePath(false)
+        }
+        
     }, [pathname])
+
+    const handlerRoutePath = (name: string) => {
+        name.includes('home') ?  router.push('/') : router.push(name)
+    }
 
     return(
         <button
-        onClick={() => router.push(buttonName.toLowerCase())}
+        onClick={() => handlerRoutePath(buttonName.toLowerCase())}
         >
             {buttonName}
             <div className={activePath ? `line-decorator-active` : `line-decorator-block`}></div>
