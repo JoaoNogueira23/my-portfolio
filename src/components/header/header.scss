@@ -4,4 +4,13 @@ header{
     flex-direction: row;
     justify-content: space-between;
     padding: 0 100px 0 100px;
+    margin-top: 32px;
+}
+
+.title-site{
+    color: var(--text-primary);
+}
+
+.icon-tag{
+    color: var(--text-secondary);
 }

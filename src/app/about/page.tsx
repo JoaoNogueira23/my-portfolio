@@ -2,6 +2,6 @@
 
 export default function ContactPage() {
     return(
-        "Coontact Page"
+        "About me"
     )
 }

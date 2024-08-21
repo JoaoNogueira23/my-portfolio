@@ -1,20 +1,19 @@
+import Button from "../buttons/Button"
 import "./header.scss"
+import NaveBar from "./pieces/NavBar"
 
 export default function Header() {
     return(
         <header>
             <div className="title-site">
-                <span>{"</"}</span>
-                <span>João Martins</span>
-                <span>{">"}</span>
+                <h2>
+                    <span className="icon-tag">{"</"}</span>
+                    <span className="">João Martins</span>
+                    <span className="icon-tag">{">"}</span>
+                </h2>
             </div>
 
-            <nav className="nav-bar">
-                <button>About</button>
-                <button>Skills</button>
-                <button>Projects</button>
-                <button>Contact</button>
-            </nav>
+            <NaveBar />
         </header>
     )
 }

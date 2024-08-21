@@ -1,0 +1,23 @@
+button{
+    background: none;
+    border: none;
+    height: 32px;
+    color: var(--text-global);
+    align-self: center;
+    font-size: 24px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.line-decorator-active{
+    background-color: var(--text-secondary);
+    padding: 2px;
+    border-radius: 1.5px;
+    width: 70%;
+}
+
+.line-decorator-block{
+    display: none;
+}
