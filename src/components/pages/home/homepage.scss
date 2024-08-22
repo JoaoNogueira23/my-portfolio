@@ -1,0 +1,23 @@
+.container-home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap:200px;
+
+}
+
+.position{
+    color: var(--text-secondary);
+}
+
+h2{
+    font-size: 32px;
+    color: var(--text-primary);
+}
+
+.apresentation{
+    color: var(--text-global);
+    font-size: 18px;
+}
+

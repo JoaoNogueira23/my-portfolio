@@ -5,7 +5,7 @@ import Image from "next/image";
 import "./about.scss"
 
 
-export default function ContactPage() {
+export default function AboutPageTeste() {
     return(
         <>
             <div className="container">

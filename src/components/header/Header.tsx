@@ -1,4 +1,3 @@
-import Button from "../buttons/Button"
 import "./header.scss"
 import NaveBar from "./pieces/NavBar"
 

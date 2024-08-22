@@ -26,6 +26,7 @@
 /* CSS APPLICATION */
 :root{
     --bg-primary: #202833;
+    --bg-secondary: rgba(48,62,82,1);
     --text-primary: #FFFFFF;
     --text-secondary: #51BAB6;
     --text-global: #82888F;
@@ -34,20 +35,22 @@
 
 body{
     background-color: var(--bg-primary);
-    background: 
-    radial-gradient(circle, rgba(48,62,82,1) 28%, rgba(32,40,51,1) 60%)
-    ;
+    //background: radial-gradient(circle, rgba(48,62,82,1) 28%, rgba(32,40,51,1) 60%);
     background-attachment: fixed;
     background-position: center;
     padding: 0 150px 0 150px;
 }
 
+
 header{
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 32px;
+    margin-top: 0;
+    position: relative;
 }
+
 
 .title-site{
     color: var(--text-primary);
