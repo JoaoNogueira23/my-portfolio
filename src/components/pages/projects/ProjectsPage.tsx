@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import './projects.scss'
+import CardMain from './pieces/cardMain'
 
 export default function ProjectsPage(){
     return(
@@ -9,61 +10,36 @@ export default function ProjectsPage(){
             </div>
 
             <div className="content-projects">
-                <div className="card-project">
-                    <Image
-                    src={'/project-sotware-educacional.jpg'}
-                    width={300}
-                    height={200}
-                    className='img-project'
-                    alt='Imagem de descrição do projeto'
-                    />
-
-                    <h3 className='title-project'>
-                        Software Educacional de Física
-                    </h3>
-
-                    <div className="describe-project">
-                        Um software que torna visível o entendimento do fenômeno <br/>
-                        de transferência de carga da eletrodinâmica.
-                    </div>
-
-                </div>
-                <div className="card-project">
-                    <Image
-                    src={'/project-sotware-educacional.jpg'}
-                    width={300}
-                    height={200}
-                    className='img-project'
-                    alt='Imagem de descrição do projeto'
-                    />
-
-                    <h3 className='title-section'>
-                        Software Educacional de Física
-                    </h3>
-
-                    <div className="describe-project">
-                        Um software que torna visível o entendimento do fenômeno <br/>
-                        de transferência de carga da eletrodinâmica.
-                    </div>
-                </div>
-                <div className="card-project">
-                    <Image
-                    src={'/project-sotware-educacional.jpg'}
-                    width={300}
-                    height={200}
-                    className='img-project'
-                    alt='Imagem de descrição do projeto'
-                    />
-
-                    <h3>
-                        Software Educacional de Física
-                    </h3>
-
-                    <div className="describe-project">
-                        Um software que torna visível o entendimento do fenômeno <br/>
-                        de transferência de carga da eletrodinâmica.
-                    </div>
-                </div>
+                <CardMain 
+                title='Sotware Educacional'
+                describe='Um software que torna visível o entendimento do fenômeno de transferência de carga da eletrodinâmica.'
+                describeDetail='Sotware criando com o Python como projeto final
+                        de uma disciplina de Física durante a minha graduação.
+                        Projeto interdisciplinar que eu idealizei com o intuito
+                        de entregar o projeto final e estudar programação ao mesmo tempo.'
+                imagePath='/project-sotware-educacional.jpg'
+                languages={['Python']}
+                linkApplication={'https://github.com/JoaoNogueira23/ProjectsPython/tree/main/SimulationOfPhisical'}
+                />
+                <CardMain 
+                title='Web Scraping'
+                describe='Extração de notícias sobre futebol'
+                describeDetail='Projeto criado com o intuito de treinar a utilização de recursos da AWS, além da utilização de algoritimos de RPA.'
+                imagePath='/project-sotware-educacional.jpg'
+                languages={['Python', 'AWS', 'MySQL']}
+                linkApplication={'https://github.com/JoaoNogueira23/news-scraping'}
+                />
+                <CardMain 
+                title='Sotware Educacional'
+                describe='Um software que torna visível o entendimento do fenômeno de transferência de carga da eletrodinâmica.'
+                describeDetail='Sotware criando com o Python como projeto final
+                        de uma disciplina de Física durante a minha graduação.
+                        Projeto interdisciplinar que eu idealizei com o intuito
+                        de entregar o projeto final e estudar programação ao mesmo tempo.'
+                imagePath='/project-sotware-educacional.jpg'
+                languages={['Python']}
+                linkApplication={'https://github.com/JoaoNogueira23/ProjectsPython/tree/main/SimulationOfPhisical'}
+                />
             </div>
         </div>
     )
