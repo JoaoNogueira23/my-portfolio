@@ -16,9 +16,7 @@ export default function HomePage(){
                     Eleve o seu negócio com um desenvolvimento de qualidade!
                     </h2>
                     <p className="apresentation">
-                    Olá, eu sou o João Victor, um desenvolvedor com especialidade em aplicações com o uso de Python,
-                    React, Banco de Dados Relacionais e AWS, com cerca de 2 anos de experiência profissional no mercado financeiro, transformando ideias
-                    em códigos.
+                    Eu me chamo João Victor, um desenvolvedor com especialidade no desenvolvimento de web apps e automações de rotinas operacionais.
                     </p>
                 </div>
                 

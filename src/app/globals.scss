@@ -39,6 +39,14 @@ body{
     background-attachment: fixed;
     background-position: center;
     padding: 0 150px 0 150px;
+
+    // smartphone
+    @media(max-width: 430px){
+      padding: 8px;
+    }
+
+    // tablets
+    
 }
 
 
@@ -50,13 +58,21 @@ header{
     justify-content: space-between;
     margin-top: 0;
     position: relative;
+
+    .title-site{
+      color: var(--text-primary);
+  
+    }
+  
+    .icon-tag{
+        color: var(--text-secondary);
+    }
+
+    @media(max-width: 490px) {
+        .nav-bar{
+          display: none;
+        }
+    }
 }
 
 
-.title-site{
-    color: var(--text-primary);
-}
-
-.icon-tag{
-    color: var(--text-secondary);
-}

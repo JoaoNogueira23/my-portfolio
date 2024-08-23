@@ -26,7 +26,7 @@ export default function RootLayout({
                     <span className="icon-tag">{">"}</span>
                 </h2>
             </div>
-
+            
             <NaveBar />
       </header>
       <main>
