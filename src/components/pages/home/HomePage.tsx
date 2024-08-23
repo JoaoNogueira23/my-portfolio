@@ -5,7 +5,7 @@ import NaveBar from "@/components/header/pieces/NavBar";
 
 export default function HomePage(){
     return(
-        <div className='container-home'>
+        <div className='container-home' id='home'>
             {/* div decribe */}
 
                 <div>
@@ -16,8 +16,8 @@ export default function HomePage(){
                     Eleve o seu negócio com um desenvolvimento de qualidade!
                     </h2>
                     <p className="apresentation">
-                    Olá, eu sou o João Victor, um desenvolvedor com especialidade em aplicações com o uso de Python, <br/>
-                    HTML, SCSS, React e AWS. Tenho cerca de 2 anos de experiência profissional, transformando ideias <br/>
+                    Olá, eu sou o João Victor, um desenvolvedor com especialidade em aplicações com o uso de Python,
+                    React, Banco de Dados Relacionais e AWS, com cerca de 2 anos de experiência profissional no mercado financeiro, transformando ideias
                     em códigos.
                     </p>
                 </div>

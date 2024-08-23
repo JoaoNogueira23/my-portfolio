@@ -4,7 +4,6 @@
     flex-direction: column;
     margin-top: 32px;
     padding: 0 0 200px 0;
-    color: var(--text-global);
     
 
     .title-page{
@@ -54,9 +53,22 @@
         }
     
         .profile-description{
+            color: var(--text-global);
             display: flex;
+            flex-direction: column;
             width: 50vw;
             height: 20vh;
+            gap: 2px;
+            
+            .text-emphasis{
+                color: var(--text-primary);
+            }
+
+            p{
+                text-align: justify;
+
+                
+            }
         }
     }
 }

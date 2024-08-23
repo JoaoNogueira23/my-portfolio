@@ -14,9 +14,6 @@ export default function NaveBar() {
             <Button 
             buttonName="Projects"
             />
-            <Button 
-            buttonName="Contact"
-            />
         </nav>
     )
     

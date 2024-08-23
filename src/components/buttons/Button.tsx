@@ -16,11 +16,10 @@ export default function Button({buttonName} : ButtonProps) {
 
     useEffect(() => {
         pathname.replace('/', '') == buttonName.toLowerCase().replace('home', '') ? setActivePath(true) : setActivePath(false)
-        
     }, [pathname])
 
     const handlerRoutePath = (name: string) => {
-        name.includes('home') ?  router.push('/') : router.push(name)
+        name.includes('home') ?  router.push('/') : router.push(`#${name}`)
     }
 
     return(
