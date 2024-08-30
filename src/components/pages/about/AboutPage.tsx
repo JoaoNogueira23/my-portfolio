@@ -20,7 +20,7 @@ export default function AboutPage() {
                         width={300}
                         height={290}
                         alt="Profile Picture"
-                        src={"/profile.png"}
+                        src={"/perfil.JPEG"}
                         />
 
                         <p>João Martins</p>

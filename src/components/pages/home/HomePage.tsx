@@ -1,6 +1,5 @@
 import Image from "next/image";
 import './homepage.scss'
-import NaveBar from "@/components/header/pieces/NavBar";
 
 
 export default function HomePage(){
@@ -8,7 +7,7 @@ export default function HomePage(){
         <div className='container-home' id='home'>
             {/* div decribe */}
 
-                <div>
+                <div className="content">
                     <p className='position'>
                     Software Developer Full Stack
                     </p>

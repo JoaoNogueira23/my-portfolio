@@ -1,8 +1,8 @@
 "use client"
 import Button from "@/components/buttons/Button"
-import "./navbar.scss"
+import "./styles/navbar.scss"
 
-export default function NaveBar() {
+export default function NavBar() {
     return(
         <nav className="nav-bar">
             <Button 

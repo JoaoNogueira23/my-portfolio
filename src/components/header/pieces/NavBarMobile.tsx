@@ -1,9 +1,17 @@
+import Button from "@/components/buttons/Button"
 
-
-export default function NaveBarMobile() {
+export default function NavBarMobile() {
     return(
-        <div className="nav-bar-mobile">
-            
-        </div>
+        <>
+            <Button 
+            buttonName="Home"
+            />
+            <Button 
+            buttonName="About"
+            />
+            <Button 
+            buttonName="Projects"
+            />
+        </>
     )
 }

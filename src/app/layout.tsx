@@ -1,7 +1,12 @@
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.scss";
 import NaveBar from "@/components/header/pieces/NavBar";
+import { useState } from "react";
+import IconMenu from "@/components/icons/IconMenu";
+import NaveBarMobile from "@/components/header/pieces/NavBarMobile";
+import Header from "@/components/header/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,20 +20,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
   return (
     <html lang="en">
       <body>
-      <header>
-            <div className="title-site">
-                <h2>
-                    <span className="icon-tag">{"</"}</span>
-                    <span className="">João Martins</span>
-                    <span className="icon-tag">{">"}</span>
-                </h2>
-            </div>
-            
-            <NaveBar />
-      </header>
+      <Header />
       <main>
         {children}
       </main>

@@ -1,27 +1,7 @@
-/* CSS RESET */
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  * {
-    margin: 0;
-  }
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  input, button, textarea, select {
-    font: inherit;
-  }
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  #root, #__next {
-    isolation: isolate;
-  }
+*{
+  margin: 0;
+  padding: 0;
+}
 
 /* CSS APPLICATION */
 :root{
@@ -35,44 +15,11 @@
 
 body{
     background-color: var(--bg-primary);
-    //background: radial-gradient(circle, rgba(48,62,82,1) 28%, rgba(32,40,51,1) 60%);
-    background-attachment: fixed;
-    background-position: center;
-    padding: 0 150px 0 150px;
-
+    padding-bottom: 64px;
     // smartphone
-    @media(max-width: 430px){
-      padding: 8px;
-    }
 
     // tablets
     
-}
-
-
-header{
-    position: fixed;
-    z-index: 10;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 0;
-    position: relative;
-
-    .title-site{
-      color: var(--text-primary);
-  
-    }
-  
-    .icon-tag{
-        color: var(--text-secondary);
-    }
-
-    @media(max-width: 490px) {
-        .nav-bar{
-          display: none;
-        }
-    }
 }
 
 

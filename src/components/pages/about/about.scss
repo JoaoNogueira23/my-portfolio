@@ -3,6 +3,7 @@
     align-items: center;
     flex-direction: column;
     margin-top: 32px;
+    margin-bottom: 64px;
 
 
     .title-page{
@@ -17,7 +18,8 @@
         flex-direction: row;
         gap: 150px;
 
-        @media(max-width: 430px) {
+        @media(max-width: 600px) {
+            margin-top: 32px;
             flex-direction: column;
             gap: 32px;
         }

@@ -27,7 +27,6 @@ export default function Button({buttonName} : ButtonProps) {
         onClick={() => handlerRoutePath(buttonName.toLowerCase())}
         >
             {buttonName}
-            <div className={activePath ? `line-decorator-active` : `line-decorator-block`}></div>
         </button>
     )
 }

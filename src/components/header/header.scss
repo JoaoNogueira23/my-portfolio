@@ -1,18 +1,111 @@
-header{
-    background-color: var(--bg-primary);
+.header{
+    background-color: var(--bg-secondary);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 32px 0 0 0;
-    padding: 0;
-    background: radial-gradient(circle, rgba(48,62,82,1) 28%, rgba(32,40,51,1) 60%);
-    
-}
-
-.title-site{
+    align-items: center;  
+    padding: 0 32px 0 32px;
     color: var(--text-primary);
+
+    .title-site{
+      color: currentColor;
+    }
+
+    .menu{
+      display:flex;
+
+      gap: 32px;
+      padding: 16px;
+
+      li{
+        list-style: none;
+      }
+      
+      .btn-mobile{
+        display: none;
+      }
+
+    }
 }
 
-.icon-tag{
-    color: var(--text-secondary);
+@media (max-width: 600px) {
+  .header{
+    padding: 32px;
+    justify-content: space-between;
+
+    *{
+      display: inline-block;
+    }
+
+    .menu{
+      display: block;
+      position: absolute;
+      width: calc(100vw - 32px);
+      visibility: hidden;
+      overflow-y: hidden;
+      background-color: var(--bg-secondary);
+      top:82px;
+      right: 0px;
+      z-index: 100;
+      align-items: center;
+    }
+
+    .menu-active{
+      height: calc(100vh - 32px);
+      visibility: visible;
+      overflow-y: none;
+      display: flex;
+      flex-direction: column; /* Alinha os itens verticalmente */
+      align-items: center; /* Centraliza os itens horizontalmente */
+      justify-content: flex-start; /* Inicia os itens verticalmente no topo da div */
+    }
+
+    .title-site{
+      margin-left: 8px;
+    }
+  
+    .btn-mobile{
+      display: flex;
+      padding: 0.5rem 1rem;
+    }
+    
+    /// config bottom menu
+    .hamburguer{
+      border-top: 2px solid;
+      width: 20px;
+      color: currentColor;
+    }
+  
+    .hamburguer::after, .hamburguer::before{
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+  
+    .active{
+      border-top-color: transparent;
+    }
+  
+    .active::before{
+      transform: rotate(135deg);
+    }
+  
+    .active::after{
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+  
+  }
+
+
+  
+  
+  
+  
 }
+    
