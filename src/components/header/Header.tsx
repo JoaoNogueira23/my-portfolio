@@ -25,16 +25,15 @@ export default function Header() {
                 <button className="btn-mobile" onClick={handlerMenu}>
                     <span className={`hamburguer${openMenu? ' active' : ''}`}></span>
                 </button>
-
                 <ul className={`menu${openMenu? ' menu-active' : ''}`}>
                     <li>
-                        <Button buttonName="Home"/>
+                        <Button buttonName="Home" handleMenu={handlerMenu}/>
                     </li>
                     <li>
-                        <Button buttonName="Projects"/>
+                        <Button buttonName="Projects" handleMenu={handlerMenu}/>
                     </li>
                     <li>
-                        <Button buttonName="About"/>
+                        <Button buttonName="About" handleMenu={handlerMenu}/>
                     </li>
                 </ul>
             </nav>
