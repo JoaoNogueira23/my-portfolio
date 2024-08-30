@@ -27,6 +27,7 @@ export default function Header() {
                 </button>
                 <ul className={`menu${openMenu? ' menu-active' : ''}`}>
                     <li>
+                        {/* handle menu dinamico */}
                         <Button buttonName="Home" handleMenu={handlerMenu}/>
                     </li>
                     <li>
