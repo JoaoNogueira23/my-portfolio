@@ -19,9 +19,8 @@
             flex-direction: column;
         }
     }
-
-    
 }
+
 
 .container-card{
     .button-change-card{
@@ -31,14 +30,35 @@
         width: 90%;
         left: 5%;
         height: 10px;
+        color:rgb(24, 23, 23);
 
-    }
+        .tooltip-card{
+            display: none;
+        }
 
-    .button-change-card:hover{
-        cursor: pointer;
+        .icon-info{
+            top:-5px;
+        }
+
+        &:hover{
+            cursor: pointer;
+
+            .tooltip-card{
+                display: block;
+                position: relative;
+                background-color: var(--text-global);
+                border-radius: 5px;
+                opacity: 60%;
+                top: -66px;
+                left: -5px;
+                width: 200px;
+                text-align:left;
+            }
+        }
     }
 
     .card-project{
+        position: relative;
         padding: 0;
         margin-top: 0;
         display: flex;
@@ -107,10 +127,13 @@
             width: 80%;
             text-align:center;
             padding: 12px;
-            justify-content: center;
-            justify-items: center;
+            align-content: center;
             border-radius: 5px;
-            height: 50px;
+            height: 42px;
+        }
+
+        &:hover{
+            top: -5px;
         }
 
         

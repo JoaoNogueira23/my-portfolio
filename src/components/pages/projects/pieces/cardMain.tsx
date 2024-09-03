@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import '../projects.scss'
 import { useState } from 'react'
+import IconInformation from '@/components/icons/IconInfo';
 
 interface PropsProject  {
     title: string;
@@ -19,9 +20,14 @@ export default function CardMain({title, describe, describeDetail, imagePath, la
     return(
         typeCard == 1 ? (
             <div className="container-card">
-            
+                
+               
                 <div className="button-change-card" onClick={() => setTypeCard(2)}>
+                    <span className='icon-info'>
+                        <IconInformation />
+                    </span>
                     
+                    <span className='tooltip-card'>Clique aqui para mais informações.</span>
                 </div>
             
                 <div className="card-project">
@@ -47,7 +53,11 @@ export default function CardMain({title, describe, describeDetail, imagePath, la
             <div className="container-card">
             
                 <div className="button-change-card" onClick={() => setTypeCard(1)}>
+                    <span className='icon-info'>
+                        <IconInformation />
+                    </span>
                     
+                    <span className='tooltip-card'>Clique aqui para retornar ao card principal.</span>
                 </div>
             
                 <div className="card-project">
