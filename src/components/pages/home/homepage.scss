@@ -1,9 +1,11 @@
 .container-home{
-    margin: 32px 64px 0 64px;
+    margin-top: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    padding: 200px 0;
+    margin: 0 64px;
 
     .content{
         display: flex;
@@ -29,7 +31,7 @@
         .button-contact{
             background-color: var(--text-secondary);
             color: var(--text-primary);
-            width: 10vw;
+            width: 150px;
             padding: 8px 0;
             text-align: center;
             border-radius: 5px;
@@ -39,6 +41,25 @@
                 cursor: pointer;
                 color: var(--text-global);
             }
+        }
+
+        .button-download{
+            background-color: var(--text-secondary);
+            color: var(--text-primary);
+            width: 150px;
+            font-size: 16px;
+            text-align: center;
+            border-radius: 5px;
+
+            &:hover{
+                cursor: pointer;
+                color: var(--text-global);
+            }
+        }
+
+        .links{
+            display: flex;
+            gap: 8px;
         }
 
     }

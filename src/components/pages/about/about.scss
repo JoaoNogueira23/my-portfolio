@@ -2,11 +2,13 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 32px;
+    margin-top: 64px;
     margin-bottom: 64px;
+    margin: 0 64px;
 
 
     .title-page{
+        margin-top: 32px;
         justify-self: center;
         color: var(--text-primary);
     }
@@ -16,8 +18,9 @@
         justify-content: space-between;
         align-items: center;
         flex-direction: row;
-        gap: 150px;
         padding-bottom: 72px;
+        gap: 72px;
+
 
         @media(max-width: 600px) {
             margin-top: 32px;
@@ -63,7 +66,7 @@
             color: var(--text-global);
             display: flex;
             flex-direction: column;
-            width: 50vw;
+            width: 40vw;
             height: 20vh;
             gap: 2px;
             padding-bottom: 32px;

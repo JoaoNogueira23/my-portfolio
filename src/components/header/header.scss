@@ -1,12 +1,15 @@
 .header{
     background-color: var(--bg-secondary);
     display: flex;
+    position: fixed;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;  
     padding: 0 32px 0 32px;
     color: var(--text-primary);
     width: calc(100% - 64px);
+    z-index: 100;
+    
 
     .title-site{
       color: currentColor;
@@ -52,7 +55,8 @@
     }
 
     .menu-active{
-      height: calc(100vh - 32px);
+      height: 20vh;
+      width: 20vh;
       visibility: visible;
       overflow-y: none;
       display: flex;
