@@ -70,6 +70,7 @@
         height: 400px;
         gap:16px;
         border-radius: 10px;
+        transition: 0.3s ease-in-out all;
 
         @media(max-width: 430px){
             width: 90vw;
@@ -133,7 +134,7 @@
         }
 
         &:hover{
-            top: -5px;
+            transform: translateY(-5px);
         }
 
         
