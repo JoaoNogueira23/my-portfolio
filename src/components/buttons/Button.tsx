@@ -1,6 +1,5 @@
 import "./button.scss"
-import { revalidatePath } from "next/cache"
-import { redirect, usePathname } from "next/navigation"
+import { usePathname } from "next/navigation"
 import { useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
 
