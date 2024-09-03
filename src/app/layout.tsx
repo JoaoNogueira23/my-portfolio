@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter, Roboto } from "next/font/google";
 import "./globals.scss";
 import Header from "@/components/header/Header";
+import Footer from "@/components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,6 +33,7 @@ export default function RootLayout({
       <main>
         {children}
       </main>
+      <Footer />
       </body>
     </html>
   );
