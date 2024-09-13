@@ -4,11 +4,13 @@
     align-items: center;
     margin-top: 32px;
     margin: 0 64px;
+    padding-bottom: 8px;
 
     .title-section{
         border-color: var(--text-secondary);
         color: var(--text-primary);
     }
+
 
     .content-projects{
         display: flex;
@@ -69,6 +71,7 @@
         align-items: center;
         width: 400px;
         height: 400px;
+        padding-bottom: '8px';
         gap:16px;
         border-radius: 10px;
         transition: 0.3s ease-in-out all;

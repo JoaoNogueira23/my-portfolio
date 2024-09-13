@@ -11,6 +11,15 @@ export default function ProjectsPage(){
 
             <div className="content-projects">
                 <CardMain 
+                title='Painel de Gerenciamento de Prontuários'
+                describe='Uma aplicação que fornece funcionalidades que ajudam médicos a ter uma maior controle de prontuários/atestados de seus pacientes'
+                describeDetail='O objetivo deste projeto é oferecer funcionalidades que possam facilitar o gerenciamento de dados médicos, uma ideia surgiu que
+                durante uma conversa informal com um amigo médico, que expressou a necessidade urgente de um sistema que lhe ajudasse de uma forma organizacional e dinâmica.'
+                imagePath='/project_medical_control.jpg'
+                languages={['TypeScript', 'MUI', 'NodeJS', 'Google Cloud']}
+                linkApplication={'https://medical-control-app.vercel.app/'}
+                />
+                <CardMain 
                 title='Sotware Educacional'
                 describe='Um software que torna visível o entendimento do fenômeno de transferência de carga da eletrodinâmica.'
                 describeDetail='Sotware criando com o Python como projeto final
