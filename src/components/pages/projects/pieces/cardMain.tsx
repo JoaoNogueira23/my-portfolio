@@ -46,7 +46,6 @@ export default function CardMain({title, describe, describeDetail, imagePath, la
                     <div className="describe-project">
                         {describe}
                     </div>
-
                 </div>
             </div>
         ) : (
