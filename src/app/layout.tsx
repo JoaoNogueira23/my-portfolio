@@ -1,11 +1,10 @@
 
 import type { Metadata } from "next";
-import { Inter, Roboto } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.scss";
 import Header from "@/components/header/Header";
 import Footer from "@/components/Footer/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
 
 const roboto = Roboto(
   {
@@ -21,8 +20,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  about,
+  projects
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
+  about: React.ReactNode
+  projects: React.ReactNode
 }>) {
 
 
@@ -30,9 +33,11 @@ export default function RootLayout({
     <html lang="pt-br">
       <body className={roboto.className}>
       <Header />
-      <main>
-        {children}
-      </main>
+        <main>
+          {children}
+          {projects}
+          {about}
+        </main>
       <Footer />
       </body>
     </html>

@@ -18,6 +18,9 @@ html{
 
 body{
     background-color: var(--bg-primary);
+    display: flex;
+    flex-direction: column;
+    gap: 4rem
 }
 
 

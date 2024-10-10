@@ -3,9 +3,11 @@ button{
     border: none;
     color: var(--text-global);
     font-size: 24px;
+    transition: .3s;
 }
 
 button:hover{
+    color: azure;
     cursor: pointer;
 }
 

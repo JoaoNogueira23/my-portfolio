@@ -1,6 +1,4 @@
-import Image from 'next/image'
 import './projects.scss'
-import CardMain from './pieces/cardMain'
 import ImageSlider from '@/components/Slider'
 
 export default function ProjectsPage(){
