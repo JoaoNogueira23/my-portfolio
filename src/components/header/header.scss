@@ -1,87 +1,83 @@
-.header{
-    background-color: var(--bg-secondary);
+.header {
+  background-color: var(--bg-secondary);
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+  color: var(--text-primary);
+  width: calc(100% - 64px);
+  z-index: 100;
+
+  .title-site {
+    color: currentColor;
+  }
+
+  .menu {
     display: flex;
-    position: fixed;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;  
-    padding: 0 32px 0 32px;
-    color: var(--text-primary);
-    width: calc(100% - 64px);
-    z-index: 100;
-    
+    gap: 32px;
+    padding: 16px;
 
-    .title-site{
-      color: currentColor;
+    li {
+      list-style: none;
     }
 
-    .menu{
-      display:flex;
-
-      gap: 32px;
-      padding: 16px;
-
-      li{
-        list-style: none;
-      }
-      
-      .btn-mobile{
-        display: none;
-      }
-
+    .btn-mobile {
+      display: none;
     }
+  }
 }
 
 @media (max-width: 600px) {
-  .header{
+  .header {
     padding: 32px;
     justify-content: space-between;
 
-    *{
-      display: inline-block;
-    }
-
-    .menu{
-      display: block;
+    .menu {
+      display: none; /* Esconda o menu inicialmente */
       position: absolute;
       width: calc(100vw - 32px);
       visibility: hidden;
-      overflow-y: hidden;
+      opacity: 0; /* Menu inicia invisível */
+      overflow: hidden;
       background-color: var(--bg-secondary);
-      top:82px;
-      right: 0px;
+      top: 82px;
+      right: 0;
       z-index: 100;
-      align-items: center;
+      transition: max-height 0.4s ease, opacity 0.4s ease, visibility 0s linear 0.4s; /* Suavizando a transição */
+      max-height: 0;
     }
 
-    .menu-active{
-      height: 20vh;
-      width: 20vh;
-      visibility: visible;
-      overflow-y: none;
+    .menu-active {
       display: flex;
-      flex-direction: column; /* Alinha os itens verticalmente */
-      align-items: center; /* Centraliza os itens horizontalmente */
-      justify-content: flex-start; /* Inicia os itens verticalmente no topo da div */
+      visibility: visible;
+      opacity: 1;
+      max-height: 300px; /* Defina a altura máxima */
+      border-radius: 5px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      transition: max-height 0.4s ease, opacity 0.4s ease; /* Suavizando a transição */
     }
 
-    .title-site{
+    .title-site {
       margin-left: 8px;
     }
-  
-    .btn-mobile{
+
+    .btn-mobile {
       display: flex;
       padding: 0.5rem 1rem;
     }
-    
-    /// config bottom menu
-    .hamburguer{
+
+    .hamburguer {
       border-top: 2px solid;
       width: 20px;
       color: currentColor;
     }
-  
-    .hamburguer::after, .hamburguer::before{
+
+    .hamburguer::after,
+    .hamburguer::before {
       content: '';
       display: block;
       width: 20px;
@@ -91,26 +87,18 @@
       transition: 0.3s;
       position: relative;
     }
-  
-    .active{
+
+    .active {
       border-top-color: transparent;
     }
-  
-    .active::before{
+
+    .active::before {
       transform: rotate(135deg);
     }
-  
-    .active::after{
+
+    .active::after {
       transform: rotate(-135deg);
       top: -7px;
     }
-  
   }
-
-
-  
-  
-  
-  
 }
-    
