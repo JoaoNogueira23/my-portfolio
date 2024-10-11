@@ -5,7 +5,7 @@ export default function ProjectsPage(){
     return(
         <div className="container-projects" id='projects'>
             <div className="title-section">
-                <h2>Projects</h2>
+                <h2>Projetos</h2>
             </div>
 
             <ImageSlider />
