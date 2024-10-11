@@ -32,13 +32,13 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={roboto.className}>
-      <Header />
-        <main>
-          {children}
-          {projects}
-          {about}
-        </main>
-      <Footer />
+        <Header />
+          <main>
+            {children}
+            {projects}
+            {about}
+          </main>
+        <Footer />
       </body>
     </html>
   );

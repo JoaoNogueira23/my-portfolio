@@ -5,9 +5,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 32px;
+  padding: 8px 200px;
   color: var(--text-primary);
-  width: calc(100% - 64px);
+  width: calc(100% - 400px);
   z-index: 100;
 
   .title-site {
@@ -29,10 +29,19 @@
   }
 }
 
+@media(max-width: 900px){
+  .header{
+    padding: 32px 64px;
+    justify-content: space-between;
+    width: calc(100% - 132px);
+  }
+}
+
 @media (max-width: 600px) {
   .header {
     padding: 32px;
     justify-content: space-between;
+    width: calc(100% - 32px);
 
     .menu {
       display: none; /* Esconda o menu inicialmente */
@@ -54,6 +63,7 @@
       visibility: visible;
       opacity: 1;
       max-height: 300px; /* Defina a altura máxima */
+      max-width: 40vh;
       border-radius: 5px;
       flex-direction: column;
       align-items: center;

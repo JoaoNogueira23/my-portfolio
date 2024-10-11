@@ -9,7 +9,7 @@ export default function HomePage(){
 
                 <div className="content">
                     <p className='position'>
-                    Software <span className="text-animate">Developer Full Stack</span>
+                    Densenvolvedor <span className="text-animate">Full Stack</span>
                     </p>
                     <h2>
                     Eleve o seu negócio com um desenvolvimento de qualidade!

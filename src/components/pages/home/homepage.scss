@@ -1,4 +1,4 @@
-// Define a animação de digitação
+// Define a animação de digitação e apagamento
 @keyframes typing {
     0% {
         width: 0;
@@ -9,60 +9,60 @@
     100% {
         width: 0;
     }
-  }
-  
-  // Define a animação para o cursor piscando
-  @keyframes blink-caret {
+}
+
+// Define a animação para o cursor piscando
+@keyframes blink-caret {
     from, to {
       border-color: transparent;
     }
     50% {
       border-color: var(--text-secondary);
     }
-  }
-.container-home{
+}
+
+.container-home {
     margin-top: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    padding: 200px 0;
+    padding: 200px 100px;
     margin: 0 64px;
 
-    .content{
+    .content {
         display: flex;
         flex-direction: column;
         gap: 12px;
 
-        .position{
+        .position {
             color: var(--text-secondary);
             font-size: 18px;
 
-            .text-animate{
+            .text-animate {
                 white-space: nowrap; // Impede quebra de linha automática
                 overflow: hidden; // Esconde o texto que ainda não foi "digitado"
                 border-right: 0.15em solid var(--text-secondary); // Adiciona o cursor
                 width: 0; // Começa com largura 0
-
-                // Animação de digitação
                 animation: 
-                typing 6s steps(30, end) infinite, 
-                blink-caret 0.75s step-end infinite;
+                    typing 4s steps(30, end) infinite,  // Animação de digitação e apagamento
+                    blink-caret 0.75s step-end infinite; // Animação do cursor piscando
+                animation-delay: 0.5s; // Atraso inicial antes da animação começar
             }
         }
-        
-        h2{
+
+        h2 {
             font-size: 32px;
             color: var(--text-primary);
         }
-        
-        .apresentation{
+
+        .apresentation {
             color: var(--text-global);
             font-size: 18px;
             text-align: left;
         }
 
-        .button-contact{
+        .button-contact {
             background-color: var(--text-secondary);
             color: var(--text-primary);
             width: 150px;
@@ -71,13 +71,13 @@
             border-radius: 5px;
             text-decoration: none;
 
-            &:hover{
+            &:hover {
                 cursor: pointer;
                 color: var(--text-global);
             }
         }
 
-        .button-download{
+        .button-download {
             background-color: var(--text-secondary);
             color: var(--text-primary);
             width: 150px;
@@ -85,53 +85,47 @@
             text-align: center;
             border-radius: 5px;
 
-            &:hover{
+            &:hover {
                 cursor: pointer;
                 color: var(--text-global);
             }
         }
 
-        .links{
+        .links {
             display: flex;
             gap: 8px;
         }
-
     }
 
-    .img-profile{
+    .img-profile {
         border-radius: 100%;
         border: 5px solid var(--text-secondary);
     }
 }
 
-@media(max-width: 600px) {
-
-    .container-home{
+@media (max-width: 600px) {
+    .container-home {
         flex-direction: row;
-        margin:24px 32px;
-        gap:16px;
+        margin: 24px 32px;
+        gap: 16px;
 
-        .content{
-            .apresentation{
+        .content {
+            .apresentation {
                 font-size: 18px;
             }
 
-            h2{
+            h2 {
                 font-size: 20px;
                 text-align: justify;
             }
 
-            .button-contact{
+            .button-contact {
                 width: 30vw;
             }
         }
-        .image-home{
+
+        .image-home {
             display: none;
         }
-        
     }
-   
-
-    
 }
-
