@@ -8,11 +8,9 @@ import "./about.scss"
 export default function AboutPage() {
     return(
         <div className="container-about" id='about'>
-            <h2 className="title-page">About</h2>
+            <h2 className="title-page">Sobre</h2>
 
             <div className="content-about">
-            
-
                 <div className="profile">
                     <Image 
                     className="img-profile"
@@ -45,15 +43,19 @@ export default function AboutPage() {
                 <div className="profile-description">
                     
                     <p>
-                    Eu sou um deseenvolvedor Full Stack com conhecimento sólido com <span className="text-emphasis">React, Python, AWS e Banco de Dados Relacionais</span> e familiaridade
-                    com tecnologias como <span className="text-emphasis">AWS (Cloud Computer), Azure</span>, e familiaridade com ferramentas de <span className="text-emphasis">LOW CODE como PowerBI e Power Automate</span>, além de ferramentas
-                    de versionamento como o GIT.
+                        Sou um densenvolvedor com sólidos conhecimentos na linguagens de programação <span className="text-emphasis"> Python</span> e <span className="text-emphasis">JavaScript</span>, além do domínio em frameworks e bibliotecas de UI para oferecer ótimas experiências para o usuário, dentre elas estão o <span className="text-emphasis">React</span>, o
+                        <span className="text-emphasis"> TypeScript</span>, o <span className="text-emphasis">NextJS</span> e o <span className="text-emphasis">Material UI</span>.
                     </p>
                     <br/>
                     <p>
-                    Tenho um experiência profissional no mercado financeiro, onde somei ao time de desenvolvimento de automações
-                    no banco BTG Pactual por cerca de 2 anos, com destaca de web apps que desenvolvi gerando eficiência operacional e
-                    mitigando, também, risco operacional. Um dos apps <span className="text-emphasis">gerou um head count por mês de eficiência (168h)</span> .
+                        Possuo experiência profissional com o uso de tecnologias de nuvem, especialmente com a <span className="text-emphasis">AWS</span>. Também sou familiaridade com ferramentas de Low Code, como <span className="text-emphasis">Power BI</span>, 
+                        <span className="text-emphasis"> UiPath</span> e <span className="text-emphasis">Power Automate</span> e ferramentas de versionamento de projetos, como o GIT.
+                    </p>
+                        
+                    <br/>
+                    <p>
+                        Tenho uma experiência profissional de cerca de 2 anos no banco BTG Pactual, onde pude contribuir com o desenvolvimento de solucões para automatizar processos para melhorar rotinas e operacões
+                        do banco para multiplas áreas. Também já atuei como Freelancer no desenvolvimento de sites e sistemas web.
                     </p>
                 </div>
             </div>
